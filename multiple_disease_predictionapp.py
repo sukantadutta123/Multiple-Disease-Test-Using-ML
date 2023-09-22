@@ -10,10 +10,11 @@ from streamlit_option_menu import option_menu
 
 
 
+
 # Loading the saved models
-diabetes_model = pickle.load(open('D:/aiml/Multiple disease Test/savedModels(Multiple Disease)/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('D:/aiml/Multiple disease Test/savedModels(Multiple Disease)/trained_model.sav', 'rb'))
-parkinsons_model = pickle.load(open('D:/aiml/Multiple disease Test/savedModels(Multiple Disease)/parkinsons_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('trained_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 # Sidebar navigation
 with st.sidebar:
